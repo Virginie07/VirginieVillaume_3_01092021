@@ -8,9 +8,14 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     
 </head>
 
@@ -19,21 +24,23 @@
 
     <!-- Header......................................... -->
 
-    <section class="header">
-        <img src="./images/ohmyfood.png" alt="Logo">
-    </section>
+    <div class="header">
+        <img src="./images/ohmyfood.png" alt="Logo" class="header__image">
+    </div>
+
+    <!-- Localisation.................................... -->
+
+    <div class="localisation">
+
+            <i class="fas fa-map-marker-alt icone"></i>
+            <p><b>Paris, Belleville</b></p> 
+
+    </div>
 
 
     <!-- Reservation..................................... -->
 
     <section class="reservation">
-
-        <div class="reservation__localisation">
-
-            <i class="fas fa-map-marker-alt"></i>
-            <p> Paris, Belleville</p> 
-
-        </div>
 
         <div class="reservation__txt">
 
@@ -42,9 +49,9 @@
 
         </div>
 
-        <div class="reservation__bouton">
+        <div class="reservation__explorer">
 
-            <input type="button" value="Explorer nos restaurants">
+            <input type="button" value="Explorer nos restaurants" class="reservation__bouton">
 
         </div>
 
@@ -57,22 +64,22 @@
         <h2>Fonctionnement</h2>
 
         <div class="fonct__sousmenu">
-
-            <i class="fas fa-mobile-alt"></i>
+            <p class="fonct__number">1</p>
+            <i class="fas fa-mobile-alt icone"></i>
             <p>Choisissez un restaurant</p>
 
         </div>
 
         <div class="fonct__sousmenu">
-
-            <i class="fas fa-list-ul"></i>
+            <p class="fonct__number">2</p>
+            <i class="fas fa-list-ul icone"></i>
             <p>Composez votre menu</p>
 
         </div>
 
         <div class="fonct__sousmenu">
-
-            <i class="fas fa-store"></i>
+            <p class="fonct__number">3</p>
+            <i class="fas fa-store icone"></i>
             <p>Dégustez au restaurant</p>
 
         </div>
@@ -83,35 +90,82 @@
 
     <section class="restau">
 
-        <div class="restau__palette">
+        <h2>Restaurants</h2>
 
-            <img src="./images/La-palette-du-goût.jpg" alt="La palette du goût" class="restau__photo">
-            <p><b>La palette du goût</b></p>
-            <p>Ménilmontant</p>
+        <div class="restau__apercu">
 
-        </div>
+            <img src="./images/La-palette-du-goût.jpg" alt="Photo La palette du goût" class="restau__photo">
+            <span>Nouveau</span>
+        
 
-        <div class="restau__note">
+            <div class="restau__texte">
+                <div class="txt">
+                    <p><b>La palette du goût</b></p>
+                    <p>Ménilmontant</p>
+                </div>
 
-            <img src="./images/La-note-enchantée.jpg" alt="La note enchantée" class="restau__photo">
-            <p><b>La note enchantée</b></p>
-            <p>Charonne</p>
-
-        </div>
-
-        <div class="restau__francaise">
-
-            <img src="./images/A-la-française.jpg" alt="A la française" class="restau__photo">
-            <p><b>A la française</b></p>
-            <p>Cité Rouge</p>
+                <div class="heart">
+                    <i class="far fa-heart fa-2x"></i>
+                </div>
+            </div>
 
         </div>
 
-        <div class="restau__delice">
+        <div class="restau__apercu">
 
-            <img src="./images/Le-délice-des-sens.jpg" alt="Le délice des sens" class="restau__photo">
-            <p><b>Le délice des sens</b></p>
-            <p>Folie-Méricourt</p>
+            <img src="./images/La-note-enchantée.jpg" alt="Photo La note enchantée" class="restau__photo">
+            <span>Nouveau</span>
+
+            <div class="restau__texte">
+                <div class="txt">
+                    <p><b>La note enchantée</b></p>
+                    <p>Charonne</p>
+                </div>
+
+                <div class="heart">
+                    <i class="far fa-heart fa-2x iconer"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="restau__apercu">
+
+            <img src="./images/A-la-française.jpg" alt="Photo A la française" class="restau__photo">
+            <span>Nouveau</span>
+
+            <div class="restau__texte">
+                <div class="txt">
+                    <p><b>A la française</b></p>
+                    <p>Cité Rouge</p>
+                </div>
+
+                <div class="heart">
+                    <i class="far fa-heart fa-2x iconer"></i>
+                </div>
+            </div>
+
+            
+
+        </div>
+
+        <div class="restau__apercu">
+
+            <img src="./images/Le-délice-des-sens.jpg" alt="Photo Le délice des sens" class="restau__photo">
+            <span>Nouveau</span>
+
+            <div class="restau__texte">
+
+                <div class="txt">
+                    <p><b>Le délice des sens</b></p>
+                    <p>Folie-Méricourt</p>
+                </div>
+
+                <div class="heart">
+                    <i class="far fa-heart fa-2x iconer"></i>
+                </div>  
+                
+            </div>
 
         </div>
 
@@ -121,10 +175,18 @@
 
     <section class="footer">
 
-        <h2>Ohmyfood</h2>
+        <h3>Ohmyfood</h3>
 
-        <p>Proposer un restaurant</p>
-        <p>Devenir partenaire</p>
+        <div class="footer__line">
+            <i class="fas fa-utensils icone iconef"></i>
+            <p>Proposer un restaurant</p>
+        </div>
+
+        <div class="footer__line">
+            <i class="fas fa-hands-helping icone iconef"></i>
+            <p>Devenir partenaire</p>
+        </div>
+        
         <p>Mentions légales</p>
         <p>Contacts</p>
 

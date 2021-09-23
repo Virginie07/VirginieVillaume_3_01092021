@@ -7,39 +7,182 @@
 body{
     margin: 1rem;
     font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem ;
+}
+
+.icone{
+    margin-right: 0.5rem;
+}
+
+h2{
+    padding-bottom: 1rem;
 }
 
 
 /* Header......................................... */
 
 .header{
-    border: solid 2px green;
+    /* border: solid 2px green; */
+
     text-align: center;
-    margin-bottom: 1rem;
 }
+
+.header__image{
+    height: auto;
+    width: 10rem;
+}
+/* Localisation................................... */
+
+.localisation{
+    /* border: solid 2px red; */
+
+    background: #EAEAEA;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
 
 /* Réservation.................................... */
 
-.reservation__localisation{
-    border: solid 2px red;
-    display: flex;
-    justify-content: center;
+.reservation{
+    background: #F6F6F6;
 }
 
-.fonct__sousmenu{
-    border: solid 2px purple;
-    display: flex;
+.reservation__txt{
+    /* border: solid 2px purple; */
+
+    text-align: center;
 }
 
+.reservation__explorer{
+    /* border: solid 2px blue; */
+
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.reservation__bouton{
+    border-radius: 20rem;
+    padding: 0.75rem;
+    background: linear-gradient(#EB73DA, #9356DC);
+    font-weight: bold;
+    color: white;
+    border: none;
+}
 
 /* Fonctionnement................................. */
+
+/* .fonct{
+    border: solid 2px green;
+} */
+
+.fonct__sousmenu{
+    /* border: solid 2px purple; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    margin: 0 auto 1rem auto;
+    padding: 1rem;
+    border-radius: 1rem;
+
+    width: 80%;
+    background: #F6F6F6;
+    box-shadow: 5px 10px 5px #F2F2F2;
+
+    font-weight: bold;
+
+}
+
+.fonct__number{
+    background: #9356DC;
+    color: white;
+
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 20px;
+
+    text-align: center;
+    padding-top: 0.2rem;
+
+    margin-left: -1.5rem;
+}
+
+
 /* Restaurants.................................... */
+
+.restau{
+    /* border: solid 2px fuchsia; */
+
+    padding-top: 2rem;
+    background: #F6F6F6;
+}
+
+
+.restau__apercu{
+    /* border: solid 2px red; */
+
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    height: 12.5rem;
+
+    background: white; 
+}
+
 
 .restau__photo{
     object-fit: cover;
     width: 100%;
+    height: 70%;
     max-width: 100%;
     max-height: 100%;
+
+    border-radius: 1rem 1rem 0 0;
+
+    position: relative;
 }
+
+
+span{
+    background: #99e2d0;
+    position: absolute;
+    margin-left: -5rem;
+    margin-top: 1rem;
+}
+
+.restau__texte{
+    /* border: solid 2px blue; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 2rem 0.5rem 0.75rem;
+}
+
+
 /* Footer......................................... */
+
+.footer{
+    /* border: solid 2px blue; */
+
+    background: #353535;
+    color: white;
+
+    line-height: 1.5rem;
+}
+
+h3{
+    font-family: 'Shrikhand', cursive;
+    font-weight: lighter;
+}
+
+.footer__line{
+    display: flex;
+    align-items: baseline;
+}
+
 
