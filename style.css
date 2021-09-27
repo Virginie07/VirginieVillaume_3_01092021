@@ -53,8 +53,6 @@ h2{
 /* Réservation.................................... */
 
 .reservation{
-    display: none;
-
     background: #F6F6F6;
     padding-top: 1.5rem;
     padding-bottom: 2rem;
@@ -200,42 +198,45 @@ h3{
     align-items: baseline;
 }
 
+
+
+
 /* RESPONSIVE.............................................. */
 
-/* @media (max-width:1920px){ */
+@media (min-width:1180px){
 
 
-    /* Body 1920px......................................... */
+    /* Body 1180px......................................... */
 
-    /* body{
+    body{
         font-size: 1rem ;
-    } */
+    }
     
 
-    /* Header 1920px....................................... */
+    /* Header 1180px....................................... */
 
-    /* .header__image{
+    .header__image{
         height: auto;
         width: 14rem;
-    } */
+    }
 
-    /* Localisation 1920px................................. */
+    /* Localisation 1180px................................. */
 
-    /* .localisation{
+    .localisation{
         height: 4rem;
         font-size: 1.2rem;
         padding-top: 1rem;
-    } */
+    }
 
-    /* Reservation 1920px.................................. */
+    /* Reservation 1180px.................................. */
 
-    /* .reservation{
+    .reservation{
         display: flex;
         justify-content: space-around;
         height: 9rem;
-    } */
+    }
 
-    /* .reservation__txt{
+    .reservation__txt{
         line-height: 3rem;
     }
 
@@ -247,7 +248,33 @@ h3{
         padding: 1.3rem;
         font-size: 1rem;
         
-    } */
-/* 
-} */
+    }
+
+    /* Fonctionnement 1180px............................... */
+   
+    .fonct__menu{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .fonct__sousmenu{
+        display: flex;
+        justify-content: space-around;
+        margin: 2rem;
+        padding: 2rem;
+        width: 30%;
+
+        font-size: 1.3rem;
+    }
+
+    .fonct__number{
+        width: 2rem;
+        height: 2rem;
+    
+        margin-left: -4.6rem;
+    }
+
+     /* Restaurants 1080px.................................. */
+
+}
 
