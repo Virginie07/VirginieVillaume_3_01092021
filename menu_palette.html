@@ -7,109 +7,117 @@
     <title>Menu La palette du goût</title>
 
     <link rel="stylesheet" href="menu.css">
-
     <link rel="stylesheet" href="fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     
 </head>
 <body>
 
 <!-- Header...................................................... -->
 
-     <section class="header">
-        <img src="./images/ohmyfood.png" alt="Logo">
+    <section class="header">
+        <a href="./index.html"><i class="fas fa-arrow-left"></i></a>
+        <img src="./images/ohmyfood.png" alt="Logo" class="header__image">
     </section>
+
+
+<!-- Image....................................................... -->
+
+
+    <img src="./images/La-palette-du-goût.jpg" alt="Photo La palette du goût">    
+
 
 
 <!-- Main........................................................ -->
 
     <section class="main">
 
-        <div class="main__img">
-            <img src="./images/La-palette-du-goût.jpg" alt="La palette du goût">
-        </div>
-
-
         <div class="main__menu">
 
-
-            <h1>La palette du goût</h1>
+            <div class="main__title menu__espace">
+                <h1>La palette du goût</h1>
+                <i class="far fa-heart fa-2x"></i>
+            </div>
 
         <!-- Entrées................ -->
 
-            <div class="menu__soustitre">
+            <div class="menu__soustitre menu__espace">
                 <p>ENTREES</p>
             </div>
 
-            <div class="menu__optionplat">
-                <p>Fricassée d'escargot</p>
+            <div class="menu__optionplat menu__espace">
+                <p><b>Fricassée d'escargot</b></p>
                 <p>Au piment d'Espelette</p>
-                <p>25€</p>
+                <p><b>25€</b></p>
             </div>
 
-            <div class="menu__optionplat">
-                <p>Foie gras de canard mi-cuit</p>
+            <div class="menu__optionplat menu__espace">
+                <p><b>Foie gras de canard mi-cuit</b></p>
                 <p>Et ses copeaux de truffe noire</p>
-                <p>35€</p>
+                <p><b>35€</b></p>
             </div>
 
-            <div class="menu__optionplat">
-                <p>Oeuf au plat</p>
+            <div class="menu__optionplat menu__espace">
+                <p><b>Oeuf au plat</b></p>
                 <p>Assaisonné à la truffe sur lit de caviar</p>
-                <p>20€</p>
+                <p><b>20€</b></p>
             </div>       
 
 
         <!-- Plats.................. -->
 
-            <div class="menu__soustitre">
+            <div class="menu__soustitre menu__espace">
                 <p>PLATS</p>
             </div>
 
-            <div class="menu__optionplat">
-                <p>Filet de boeuf aux herbes</p>
+            <div class="menu__optionplat menu__espace">
+                <p><b>Filet de boeuf aux herbes</b></p>
                 <p>Accompagné de sa ribambelle de légumes</p>
-                <p>40€</p>
+                <p><b>40€</b></p>
             </div>
 
-            <div class="menu__optionplat">
-                <p>Parmentier de queue de boeuf</p>
+            <div class="menu__optionplat menu__espace">
+                <p><b>Parmentier de queue de boeuf</b></p>
                 <p>À la truffe noire sur sa purée de panais</p>
-                <p>35€</p>
+                <p><b>35€</b></p>
             </div>
 
-            <div class="menu__optionplat">
-                <p>Filet de turbot</p>
+            <div class="menu__optionplat menu__espace">
+                <p><b>Filet de turbot</b></p>
                 <p>Aux agrumes</p>
-                <p>44€</p>
+                <p><b>44€</b></p>
             </div>
 
 
         <!-- Desserts............... -->
 
-            <div class="menu__soustitre">
+            <div class="menu__soustitre menu__espace">
                 <p>DESSERTS</p>
             </div>
 
-            <div class="menu__optionplat">
-                <p>Paris-Brest</p>
+            <div class="menu__optionplat menu__espace">
+                <p><b>Paris-Brest</b></p>
                 <p>Revisité</p>
-                <p>18€</p>
+                <p><b>18€</b></p>
             </div>
 
-            <div class="menu__optionplat">
-                <p>Macaron au chocolat d'exception</p>
+            <div class="menu__optionplat menu__espace">
+                <p><b>Macaron au chocolat d'exception</b></p>
                 <p>Et glace à la vanille de Madagascar</p>
-                <p>22€</p>
+                <p><b>22€</b></p>
             </div>
 
-            <div class="menu__optionplat">
-                <p>Mousse au chocolat</p>
+            <div class="menu__optionplat menu__espace">
+                <p><b>Mousse au chocolat</b></p>
                 <p>Au piment d'Espelette et à la truffe noire</p>
-                <p>23€</p>
+                <p><b>23€</b></p>
             </div>
 
         </div>
@@ -117,9 +125,9 @@
 
         <!-- Bouton.................. -->
         
-        <div class="main__btn">
+        <div class="main__cmd">
 
-            <input type="button" value="Commander">
+            <input type="button" value="Commander" class="main__btn">
 
         </div>    
 
@@ -128,17 +136,24 @@
 
 <!-- Footer.................................................... -->
 
-    <section class="Footer">
+<section class="footer">
 
-        <h2>Ohmyfood</h2>
+    <h3>Ohmyfood</h3>
 
+    <div class="footer__line">
+        <i class="fas fa-utensils icone iconef"></i>
         <p>Proposer un restaurant</p>
+    </div>
+
+    <div class="footer__line">
+        <i class="fas fa-hands-helping icone iconef"></i>
         <p>Devenir partenaire</p>
-        <p>Mentions légales</p>
-        <p>Contacts</p>
+    </div>
+    
+    <p>Mentions légales</p>
+    <p>Contacts</p>
 
-    </section>
-
+</section>
 
 <!-- END....................................................... -->
     

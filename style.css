@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body{
     margin: 1rem;
     font-family: 'Roboto', sans-serif;
@@ -31,6 +32,8 @@ h2{
     height: auto;
     width: 10rem;
 }
+
+
 /* Localisation................................... */
 
 .localisation{
@@ -39,15 +42,22 @@ h2{
     background: #EAEAEA;
     display: flex;
     justify-content: center;
+
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    border-top: solid 2px #CCCCCC;
+    margin-top: 1rem;
 }
 
 
 /* Réservation.................................... */
 
 .reservation{
+    display: none;
+
     background: #F6F6F6;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
 }
 
 .reservation__txt{
@@ -75,9 +85,10 @@ h2{
 
 /* Fonctionnement................................. */
 
-/* .fonct{
-    border: solid 2px green;
-} */
+.fonct{
+    /* border: solid 2px green; */
+    margin-top: 1.5rem;
+}
 
 .fonct__sousmenu{
     /* border: solid 2px purple; */
@@ -92,7 +103,7 @@ h2{
 
     width: 80%;
     background: #F6F6F6;
-    box-shadow: 5px 10px 5px #F2F2F2;
+    box-shadow: 5px 10px 5px #E6E6E6;
 
     font-weight: bold;
 
@@ -117,7 +128,8 @@ h2{
 
 .restau{
     /* border: solid 2px fuchsia; */
-
+    
+    margin-top: 2rem;
     padding-top: 2rem;
     background: #F6F6F6;
 }
@@ -172,12 +184,15 @@ span{
     background: #353535;
     color: white;
 
+    padding: 1rem;
+   
     line-height: 1.5rem;
 }
 
 h3{
     font-family: 'Shrikhand', cursive;
     font-weight: lighter;
+    padding-bottom: 0.5rem;
 }
 
 .footer__line{
@@ -185,4 +200,54 @@ h3{
     align-items: baseline;
 }
 
+/* RESPONSIVE.............................................. */
+
+/* @media (max-width:1920px){ */
+
+
+    /* Body 1920px......................................... */
+
+    /* body{
+        font-size: 1rem ;
+    } */
+    
+
+    /* Header 1920px....................................... */
+
+    /* .header__image{
+        height: auto;
+        width: 14rem;
+    } */
+
+    /* Localisation 1920px................................. */
+
+    /* .localisation{
+        height: 4rem;
+        font-size: 1.2rem;
+        padding-top: 1rem;
+    } */
+
+    /* Reservation 1920px.................................. */
+
+    /* .reservation{
+        display: flex;
+        justify-content: space-around;
+        height: 9rem;
+    } */
+
+    /* .reservation__txt{
+        line-height: 3rem;
+    }
+
+    .reservation__explorer{
+        padding-top: 2rem;
+    }
+
+    .reservation__bouton{
+        padding: 1.3rem;
+        font-size: 1rem;
+        
+    } */
+/* 
+} */
 
