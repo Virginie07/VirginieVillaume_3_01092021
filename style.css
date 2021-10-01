@@ -6,7 +6,7 @@
 
 
 body{
-    margin: 1rem;
+    margin: 1rem 0.1rem 0.1rem 0.1rem;
     font-family: 'Roboto', sans-serif;
     font-size: 0.85rem ;
 }
@@ -92,7 +92,7 @@ h2{
     /* border: solid 2px purple; */
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
 
     margin: 0 auto 1rem auto;
@@ -118,7 +118,7 @@ h2{
     text-align: center;
     padding-top: 0.2rem;
 
-    margin-left: -1.5rem;
+    margin-left: -2.7rem;
 }
 
 
@@ -202,6 +202,10 @@ h3{
 
 
 /* RESPONSIVE.............................................. */
+/* ........................................................ */
+
+
+
 
 @media (min-width:1180px){
 
@@ -210,6 +214,11 @@ h3{
 
     body{
         font-size: 1rem ;
+        margin: 1rem 2.5rem 2.5rem 2.5rem;
+    }
+
+    h2{
+        margin-left: 5rem;
     }
     
 
@@ -250,31 +259,183 @@ h3{
         
     }
 
-    /* Fonctionnement 1180px............................... */
-   
+}
+
+
+
+
+/* RESPONSIVE 800px.................................. */
+
+
+@media (min-width:800px){
+
+    /* Fonctionnement 800px.......................... */
+
+
     .fonct__menu{
         display: flex;
         flex-direction: row;
     }
 
     .fonct__sousmenu{
-        display: flex;
-        justify-content: space-around;
-        margin: 2rem;
-        padding: 2rem;
-        width: 30%;
-
-        font-size: 1.3rem;
+        margin: 1.5rem;
     }
 
-    .fonct__number{
-        width: 2rem;
-        height: 2rem;
-    
-        margin-left: -4.6rem;
+    /* Restaurants 800px............................. */
+
+    .restau{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-areas:
+        "rt rt"
+        "rp rn"
+        "rf rd";
     }
 
-     /* Restaurants 1080px.................................. */
+    .restau__apercu{
+        width: 25rem;
+        height: 15rem;
+        margin-left: 12rem;
+        box-shadow: 5px 10px 5px #E6E6E6;
+    }
+
+    .reservation__texte{
+        padding: 0.5rem;
+    }
+
+    .restau__titre{
+        grid-area: rt;
+        margin-bottom: 1rem;
+    }
+
+    .restau__palette{
+        grid-area: rp;
+    }
+
+    .restau__note{
+        grid-area: rn;
+    }
+
+    .restau__fr{
+        grid-area: rf;
+    }
+
+    .restau__delice{
+        grid-area: rd;
+    }
 
 }
 
+
+
+
+
+
+/* RESPONSIVE 675px........................................... */
+
+
+
+@media (min-width:675px){
+    
+    /* Fonctionnement.......................................... */
+    .fonct__number{
+        width: 3rem;
+        height: 3rem;
+    
+        margin-left: -4.5rem;
+    }
+    
+    /*Restaurant..............................................  */
+
+    .restau__apercu{
+        margin-left: 8rem;
+        height: 16rem;
+        width: 60%;
+    }
+
+}
+
+
+
+
+
+
+/* RESPONSIVE 500px................................. */
+
+
+@media (min-width:500px){
+
+    /* Fonctionnement 500px......................... */
+
+    .fonct__sousmenu{
+        padding: 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    .fonct__number{
+        margin-left: -3.1rem;
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+
+    /* Restaurants................................... */
+    
+    
+    .restau__apercu{
+        margin-left: 3rem;
+        height: 14rem;
+        width: 80%;
+    }
+    
+
+    /* Footer 500px.................................. */
+
+    .footer{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 3rem 3rem 3rem;
+        grid-template-areas: 
+        ". ft ."
+        "fu . fm"
+        "fh . fc";
+        padding-left: 2rem;
+        font-size: 1rem;
+    }
+
+
+    h3{
+        grid-area: ft;
+    }
+
+    .footer__ustensil{
+        grid-area: fu;
+    }
+
+    .footer__hand{
+        grid-area: fh;
+    }
+
+    .footer__mention{
+        grid-area: fm;
+    }
+
+    .footer__contact{
+        grid-area: fc;
+    }
+
+
+}
+
+
+
+
+/* RESPONSIVE 400px...................................... */
+
+
+@media (min-width:400px){
+    .fonct__sousmenu{
+        width: 60%;
+        height: auto;
+        font-size: 1rem;
+    }
+}
