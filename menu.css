@@ -103,11 +103,16 @@ h1{
 .main__btn{
     border-radius: 20rem;
     padding: 0.75rem;
-
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 25%);
     background: linear-gradient(#EB73DA, #9356DC);   
     font-weight: bold;
     color: white;
     border: none;
+}
+
+.main__btn:hover{
+    filter: brightness(1.1);
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 50%);
 }
 
 

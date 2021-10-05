@@ -79,7 +79,14 @@ h2{
     font-weight: bold;
     color: white;
     border: none;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 25%);
 }
+
+.reservation__bouton:hover{
+    filter: brightness(1.1);
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 50%);
+}
+
 
 /* Fonctionnement................................. */
 
@@ -171,30 +178,6 @@ span{
     justify-content: space-between;
     align-items: center;
     padding: 0.4rem 2rem 0.5rem 0.75rem;
-}
-
-.heart{
-    position: relative;
-    z-index: 0;
-    overflow: hidden;
-}
-
-.heart::before{
-    content: '';
-    position: absolute;
-    top: 30px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #9356DC;
-    border-radius: 50% 50% 0 0;
-    transition: all 0.5s;
-    z-index: -1;
-}
-
-.heart:hover::before{
-    top: 0;
-    border-radius: 0%;
 }
 
 
