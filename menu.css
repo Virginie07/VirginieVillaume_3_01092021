@@ -62,6 +62,7 @@ img{
     padding: 1rem;
 }
 
+
 .main__title{
     display: flex;
     justify-content: space-between;
@@ -113,6 +114,36 @@ h1{
 .main__btn:hover{
     filter: brightness(1.1);
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 50%);
+}
+
+
+
+.menuentrees{
+    animation: itemAppear 0.2s;
+    animation-timing-function: cubic-bezier(0,1.2,.5,1);
+    animation-fill-mode: both;
+}
+
+.menuplats{
+    animation: itemAppear 1s;
+    animation-timing-function: cubic-bezier(0,1.2,.5,1);
+    animation-fill-mode: both;
+}
+
+.menudesserts{
+    animation: itemAppear 1.8s;
+    animation-timing-function: cubic-bezier(0,1.2,.5,1);
+    animation-fill-mode: both;
+}
+
+@keyframes itemAppear{
+    0% {
+    transform: scale(0);
+    }
+    100% {
+    transform: scale(1);
+    }
+
 }
 
 
