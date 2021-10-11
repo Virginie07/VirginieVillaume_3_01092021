@@ -25,68 +25,50 @@ h2{
     height: 100%;
     vertical-align: middle;
     text-align: center;
+    padding-top: 170px;
     position: fixed;
+
     z-index: 9999;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    animation: loader 1s ease-in-out 3s forwards;
+    /* top: 0;
+    left: 0; */
+    /* pointer-events: none; */
+    animation: loader 1s ease-in-out 1s forwards;
+}
+
+.loader__chef{
+    width: 10rem;
+    height: auto;
 }
 
 @keyframes loader {
     0% {
       opacity: 1;
+      transform: rotate(0deg);
     }
     50% {
       opacity: 0.5;
     }
     100% {
       opacity: 0;
+      transform: rotate(180deg);
     }
+
+
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* .fonct__titreload{
-    display: flex;
-} */
-
-/* .spinner{
-    margin-left: 400px;
-    width: 50px;
-    height: 50px;
-} */
-
-/* .loading {
-    display: flex;
-    justify-content: center;
-} */
-
-/* .loading::after {
-    content: "";
-    width: 50px;
-    height: 50px;
-    border: 10px solid #dddddd;
-    border-top-color: #009579;
-    border-radius: 50%;
-    animation: loading 1s ease infinite;
-} */
-
-/* @keyframes loading {
-    to {
-        transform: rotate(1turn);
+  @keyframes loader {
+    0% {
+      opacity: 1;
+      transform: rotate(0deg);
     }
-} */
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 0;
+      transform: rotate(180deg);
+    }
+  }
 
 
 /* Header......................................... */
