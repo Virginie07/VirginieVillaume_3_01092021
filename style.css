@@ -29,9 +29,9 @@ h2{
     position: fixed;
 
     z-index: 9999;
-    /* top: 0;
-    left: 0; */
-    /* pointer-events: none; */
+    top: 0;
+    left: 0;
+    pointer-events: none;
     animation: loader 1s ease-in-out 1s forwards;
 }
 
@@ -41,22 +41,6 @@ h2{
 }
 
 @keyframes loader {
-    0% {
-      opacity: 1;
-      transform: rotate(0deg);
-    }
-    50% {
-      opacity: 0.5;
-    }
-    100% {
-      opacity: 0;
-      transform: rotate(180deg);
-    }
-
-
-  }
-
-  @keyframes loader {
     0% {
       opacity: 1;
       transform: rotate(0deg);
@@ -181,6 +165,20 @@ h2{
 
 
 /* Restaurants.................................... */
+
+.restau__icone{
+    position: relative;
+}
+
+.iconer:hover{
+    font-weight: 900;
+    background: linear-gradient(#EB73DA, #9356DC);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
 
 .restau{
     /* border: solid 2px fuchsia; */
