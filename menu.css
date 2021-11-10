@@ -84,10 +84,11 @@ h1{
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
 }
+                             
 
 .menu__soustitre{
-    border-bottom: solid 3px #99e2d0;
-    width: 2.3rem;
+    /* border-bottom: solid 3px #99e2d0; */
+    width: 6rem;
 }
 
 .menu__optionplat{
@@ -97,13 +98,19 @@ h1{
     padding: 0.5rem;
 }
 
-.menu__prix{
-    display: flex;
-    justify-content: space-between;
-}
 
 .menu__espace{
     margin-bottom: 1rem;
+}
+
+.menu__para{
+    width: 75%;
+    /* border: solid 2px red; */
+}
+
+.menu__prix{
+    width: 17%;
+    /* border: solid 2px blue; */
 }
 
 
@@ -129,6 +136,9 @@ h1{
 }
 
     /* Animations................................................ */
+
+
+    /* Apparition menus */
 
 .menuentrees{
     animation: itemAppear 0.2s;
@@ -157,6 +167,51 @@ h1{
     }
 
 }
+
+
+    /* Icone Check */
+
+.padding0 {
+    padding: 0 0 0 0.8rem !important;
+}
+
+.menu__espace {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: solid 2px fuchsia; */
+}
+
+.test {
+    width: 20%;
+    overflow: hidden;
+    height: 100%;
+    text-align: center;
+    line-height: 75px;
+    margin-right: -90px;
+    background-color:#99e2d0;
+    transition: all 1000ms;
+    /* border: solid 2px blue; */
+}
+
+.menu__espace:hover .test {
+    margin-right: 0;
+}
+
+.test_icon {
+    transition: all 1000ms;
+}
+
+.test_icon:hover {
+    transform: rotate(-360deg);
+}
+
+.suspension{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 
 
 /* Footer......................................... */
@@ -201,6 +256,10 @@ h3{
 
     .header__arrow{
         margin-left: 2rem;
+    }
+
+    .test {
+        margin-right: -160px;
     }
 }
 
@@ -335,6 +394,10 @@ h3{
     .menu__quatre{
         margin-left: 0.7rem;
         margin-right: 0.7rem;
+    }
+
+    .test {
+        margin-right: -100px;
     }
 }
 
